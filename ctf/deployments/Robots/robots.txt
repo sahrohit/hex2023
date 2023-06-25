@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /26022003.html
+Disallow: /10122003.html
+Disallow: /18112002.html
