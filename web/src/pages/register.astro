@@ -1,0 +1,77 @@
+---
+import Header from "~/components/header.astro";
+import Card from "~/components/card.astro";
+import HeroImage from "~/components/hero-image.astro";
+import Starfield from "~/components/starfield.astro";
+import Layout from "~/layouts/layout.astro";
+import type { EventRegistration } from "~/types";
+
+const events: Array<EventRegistration> = [
+    {
+        name: "HExGenuis (Hackathon)",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSf1BhsJ4tnqT_h8vvviRVl5u2c0b1D2qqayPvNzoLE2ZqYF4Q/viewform",
+        description:
+            "Join us for a 36-hour hackathon 🕑 on 28th Asar, 1 PM. All skill levels welcome!",
+    },
+    {
+        name: "CTF (Catch the Flag)",
+        description:
+            "Try to find the flag 🚩 in the given code and win exciting prizes!",
+        href: "https://ctf.hexhimalaya.com",
+    },
+    {
+        name: "Competitive Programming",
+        description: "Solve problems 🧠 on HackerRank and win exciting prizes!",
+        href: "https://www.hackerrank.com/contests/hexgenuis",
+    },
+    {
+        name: "UI/UX Design (Figma)",
+        description:
+            "Design a UI/UX for a given problem statement and win prizes! 🎨",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSdmc2lUv958zp76Cv4XFsRN2TWlvTHUY9vp9xz-M5RET6ZnQw/viewform",
+    },
+];
+---
+
+<Layout>
+    <Header />
+    <section class="relative h-full overflow-y-hidden bg-black">
+        <Starfield />
+        <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
+            <HeroImage />
+        </div>
+
+        <div
+            class="max-h-100vh relative mx-8 grid h-full place-items-center pb-16"
+        >
+            <ul
+                role="list"
+                class="grid grid-cols-[repeat(auto-fit,minmax(24ch,1fr))] gap-4"
+            >
+                {
+                    events.map((event) => (
+                        <Card
+                            href={event.href}
+                            title={event.name}
+                            body={event.description}
+                        />
+                    ))
+                }
+            </ul>
+            <h2
+                class="gradient-text flex w-full flex-col gap-2 self-end pb-4 text-center font-extrabold tracking-tighter text-6xl sm:gap-4 sm:self-auto sm:justify-self-end"
+            >
+                Register
+            </h2>
+        </div>
+        <h1>Hello</h1>
+    </section>
+</Layout>
+
+<noscript>
+    <style>
+        #splash-bg-fallback {
+            display: block;
+        }
+    </style>
+</noscript>

@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Mokxha",
+    description:
+      "It is a society of Computer Science and Information Technology (CSIT) students that caters to the evolving technological requirements of the students while offering comprehensive technical support. Even this website is made by Mokxha.",
+    icon: "icon-park:computer",
+  },
+  {
+    title: "Robotics Club",
+    description:
+      "Robotics Club is an active group of students pursuing engineering studies in the college who primely intend to design and develop robots and robotic ideas.",
+    icon: "noto:robot",
+  },
+  {
+    title: "Himalaya Electronics and Computer Club",
+    description:
+      "Founded as the platform for electronics and computer engineering students to enhance their creativity and career development skills. ",
+    icon: "flat-color-icons:electronics",
+  },
+  {
+    title: "AStHa",
+    description:
+      "Architectural Students of Himalaya (ASTHA), established in 2068, is a students' organization founded by the architecture students of Himalaya College of Engineering, with a sole purpose to boost interaction, co-operation, creativity and leadership skills of students.",
+    icon: "ic:outline-architecture",
+  },
+  {
+    title: "Himalaya Civil Club",
+    description:
+      "It is a proactive society of civil engineering students at Himalaya College of Engineering, dedicated to enhancing career prospects, fostering creativity and skills development, and facilitating real-world interactions for updated knowledge and awareness.",
+    icon: "noto-v1:construction-worker",
+  },
+  {
+    title: "and many more...",
+    description: "",
+    icon: "mdi:dot",
+  },
+];
+---
+
+<ContentSection title="Clubs" id="clubs">
+  <Fragment slot="lead">
+    Explore Our
+    <span class="text-primary">Dynamic</span> Club Community at <span
+      class="text-primary">Himalaya</span
+    >
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

@@ -1,4 +1,4 @@
-export interface CompatibilityItem {
+export interface SponsorItem {
   icon: string;
   title: string;
   url: string;
@@ -25,4 +25,10 @@ export interface ShowcaseSite {
   title: string;
   image: ImageMetadata;
   url: string;
+}
+
+export interface EventRegistration {
+  name: string;
+  description: string;
+  href: string;
 }
