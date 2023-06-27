@@ -6,7 +6,7 @@ Fight, Check, Repeat
 | -------------------- | --------------------------------------------------------------------------------------------------- |
 | **Category**         | Forensics                                                                                           |
 | **Points**           | 1500                                                                                                |
-| **Links**            | [Zipped2048.zip](https://ctf.hexhimalaya.com/files/136e891d932eb60ea8913ae451c26adc/Zipped2048.zip) |
+| **Links**            | [Zipped2048.zip](https://ctf.hexhimalaya.com/files/70b24feb640e5c05ae5e62e8378cfcf3/Zipped2048.zip) |
 | **Files**            |                                                                                                     |
 | **Difficulty (1-5)** | 2                                                                                                   |
 | **Tags**             |                                                                                                     |
