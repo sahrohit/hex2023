@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HEx Data Vault</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="chrome-extension://jdkknkkbebbapilgoeccciglkfbmbnfm/hook.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <br /><br />
+      <h1>HEx Mainframe Data Vault</h1>
+      <br /><br /><br /><br /><br />
+      <div class="form">
+        <h3>Please enter identification</h3>
+        <br /><br />
+        <form>
+          <label>Username</label><br /><br />
+          <input
+            type="text"
+            id="un"
+            placeholder="Enter your username"
+          /><br /><br />
+          <label>Password</label><br /><br />
+          <input
+            type="text"
+            id="pw"
+            placeholder="Enter your password"
+          /><br /><br />
+          <button
+            style="
+              background-color: darkslategray;
+              color: aliceblue;
+              width: 100px;
+            "
+            type="submit"
+            onclick="verify()"
+          >
+            Enter
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+  <!--
+        import hashlib
+
+        def hash_pw(pw_str):                         
+            pw_bytes = bytearray()
+            pw_bytes.extend(pw_str.encode())
+            m = hashlib.md5()
+            m.update(pw_bytes)
+            return m.digest()
+
+        -->
+</html>
