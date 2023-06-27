@@ -1,9 +1,9 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
+import SponsorList from "~/components/sponsor-list.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { CompatibilityItem } from "~/types";
+import type { SponsorItem } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const frameworks: Array<SponsorItem> = [
   {
     title: "React",
     icon: "frameworks/react",
@@ -36,7 +36,7 @@ const frameworks: Array<CompatibilityItem> = [
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const platforms: Array<SponsorItem> = [
   {
     title: "Netlify",
     icon: "platforms/netlify",
@@ -70,20 +70,24 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Sponsors" id="sponsors">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
+    Backed by the people and community you trust. <br /> Supporting Student Initiatives
+    and Success
+    <!-- Astro <span class="text-primary"
+      >plays nice</span
+    >. Bring your own UI{" "}
     <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    and deploy to your favorite <span class="text-primary">platform</span>. -->
   </Fragment>
-  <CompatibilityList
+  <SponsorList
     items={frameworks}
-    title="Frameworks"
+    title="Sponsors"
     url="https://docs.astro.build/core-concepts/framework-components/"
   />
-  <CompatibilityList
+  <SponsorList
     items={platforms}
-    title="Platforms"
+    title="Supporters"
     url="https://docs.astro.build/guides/deploy/"
   />
 </ContentSection>
