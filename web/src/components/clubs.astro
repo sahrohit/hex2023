@@ -1,45 +1,54 @@
 ---
-import { Icon } from "astro-icon";
+import { Picture } from "@astrojs/image/components";
 import ContentSection from "~/components/content-section.astro";
 import type { FeatureItem } from "~/types";
+import moon from "~/assets/moon.jpg";
+import robo from "~/assets/robo.png";
+import elec from "~/assets/elec.png";
+import astha from "~/assets/astha.png";
+import civil from "~/assets/civil.png";
+import itclub from "~/assets/itclub.png";
 
 const features: Array<FeatureItem> = [
   {
-    title: "Mokxha",
+    title: "Himalaya Information Technology Club",
     description:
-      "It is a society of Computer Science and Information Technology (CSIT) students that caters to the evolving technological requirements of the students while offering comprehensive technical support. Even this website is made by Mokxha.",
-    icon: "icon-park:computer",
+      "Himalaya IT Club serves as a platform for students to explore their interests, expand their knowledge, and enhance their skills in various areas of IT by organizing workshops, seminars, and training sessions with the goal of not only growing academically but also on a personal level.",
+    image: itclub,
   },
   {
-    title: "Robotics Club",
+    title: "Himalaya Robotics Club",
     description:
-      "Robotics Club is an active group of students pursuing engineering studies in the college who primely intend to design and develop robots and robotic ideas.",
-    icon: "noto:robot",
+      "Our club is a passionate community dedicated to exploring the world of robotics and artificial intelligence. Join us to collaborate, learn, and push the boundaries of innovation. Our diverse activities include workshops, competitions, and hands-on projects.",
+    image: robo,
   },
   {
     title: "Himalaya Electronics and Computer Club",
     description:
-      "Founded as the platform for electronics and computer engineering students to enhance their creativity and career development skills. ",
-    icon: "flat-color-icons:electronics",
+      "Our club enhance student welfare, bridge communication, promote growth, and foster collaboration between the department and students. The club aims to meet student needs, organize workshops, promote creativity, and encourage participation in college events for holistic development.",
+    image: elec,
   },
   {
     title: "AStHa",
     description:
-      "Architectural Students of Himalaya (ASTHA), established in 2068, is a students' organization founded by the architecture students of Himalaya College of Engineering, with a sole purpose to boost interaction, co-operation, creativity and leadership skills of students.",
-    icon: "ic:outline-architecture",
+      "Our club has been working for welfare of students since 2068. We aim to guide students even on development of those skills which are not taught academically and create opportunities which is necessary for growth.",
+
+    image: astha,
   },
   {
     title: "Himalaya Civil Club",
     description:
-      "It is a proactive society of civil engineering students at Himalaya College of Engineering, dedicated to enhancing career prospects, fostering creativity and skills development, and facilitating real-world interactions for updated knowledge and awareness.",
-    icon: "noto-v1:construction-worker",
+      "Our club aims to promote learning through various workshop and seminars that provide practical exposure to real world challenges.Furthermore, we strive to keep the students updated on latest advancements and trends on civil engineering.",
+
+    image: civil,
   },
   {
     title: "and many more...",
     description: "",
-    icon: "mdi:dot",
+    image: moon,
   },
 ];
+const widths = [128];
 ---
 
 <ContentSection title="Clubs" id="clubs">
@@ -51,11 +60,19 @@ const features: Array<FeatureItem> = [
   </Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
-      features.map(({ title, description, icon }) => (
+      features.map(({ title, description, image }) => (
         <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
-            <Icon name={icon} />
-          </div>
+          <div class="h-24 w-24 rounded-full border-2 border-current p-3">
+            {title !== "and many more..." && (
+              <Picture
+                class="h-full w-full object-cover"
+                src={image}
+                widths={widths}
+                sizes="100vw"
+                alt="The ridged surface of the moon"
+              />
+              )}
+            </div>
           <p class="text-center font-extrabold text-xl">{title}</p>
           <p class="text-center text-offset text-sm">{description}</p>
         </li>

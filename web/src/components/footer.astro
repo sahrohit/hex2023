@@ -14,6 +14,11 @@ const links: Array<FooterLink> = [
     description: "HEx on Facebook",
     icon: "fa-brands:facebook",
   },
+  {
+    url: "https://www.instagram.com/_hex_2023/",
+    description: "HEx on Instagram",
+    icon: "fa-brands:instagram",
+  },
 ];
 ---
 
@@ -26,6 +31,7 @@ const links: Array<FooterLink> = [
       links.map((link) => (
         <li>
           <a
+            target="_blank"
             class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
             href={link.url}
           >

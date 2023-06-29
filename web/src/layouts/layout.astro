@@ -52,20 +52,20 @@ const description =
                 document.documentElement.dataset.theme = themeSaved;
             } else {
                 const prefersDark = window.matchMedia(
-                    "(prefers-color-scheme: dark)"
+                    "(prefers-color-scheme: light)"
                 ).matches;
                 document.documentElement.dataset.theme = prefersDark
-                    ? "dark"
-                    : "light";
+                    ? "light"
+                    : "dark";
             }
 
             window
-                .matchMedia("(prefers-color-scheme: dark)")
+                .matchMedia("(prefers-color-scheme: light)")
                 .addEventListener("change", (event) => {
                     if (!localStorage.getItem("theme")) {
                         document.documentElement.dataset.theme = event.matches
-                            ? "dark"
-                            : "light";
+                            ? "light"
+                            : "dark";
                     }
                 });
         </script>

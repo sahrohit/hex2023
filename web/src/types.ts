@@ -6,7 +6,7 @@ export interface SponsorItem {
 
 export interface FeatureItem {
   description: string;
-  icon: string;
+  image: any;
   title: string;
 }
 
