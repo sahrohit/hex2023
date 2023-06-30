@@ -62,7 +62,7 @@ const widths = [128];
     {
       features.map(({ title, description, image }) => (
         <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-          <div class="h-24 w-24 rounded-full border-2 border-current p-3">
+          <div class="h-24 w-24 rounded-full border-2 border-current bg-white p-3">
             {title !== "and many more..." && (
               <Picture
                 class="h-full w-full object-cover"
@@ -71,8 +71,8 @@ const widths = [128];
                 sizes="100vw"
                 alt="The ridged surface of the moon"
               />
-              )}
-            </div>
+            )}
+          </div>
           <p class="text-center font-extrabold text-xl">{title}</p>
           <p class="text-center text-offset text-sm">{description}</p>
         </li>
