@@ -1,0 +1,194 @@
+---
+import { Icon } from "astro-icon";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+dayjs.extend(relativeTime);
+
+interface Action {
+    href: string;
+    title: string;
+    icon: string;
+}
+
+interface Event {
+    title: string;
+    icon?: string;
+    registrationDeadline: string;
+    runnerUpPrize?: string;
+    secondRunnerUpPrize?: string;
+    start: string;
+    end: string;
+    venue: string;
+    registartionFee: string;
+    winningPrize: string;
+    desc: string;
+    actions: Action[];
+    contact?: string[];
+}
+
+interface Props {
+    club: string;
+}
+const { club } = Astro.props;
+
+const events: Event[] = [];
+
+const response = await fetch(
+    `https://hex-2023-default-rtdb.asia-southeast1.firebasedatabase.app/${club}/events.json`
+);
+const data = await response.json();
+
+if (data){
+    Object.keys(data).forEach((key) => events.push({ ...data[key] }));
+}
+
+---
+
+<ol class="relative ml-4 border-l border-gray-200 dark:border-gray-700">
+    {events.length === 0 && <p>No Events to show</p>}
+    {
+        events.map((event: Event) => {
+            let status = "Scheduled";
+            let statusTextColor = "bg-purple-100";
+            let statusBackgroundColor = "text-purple-800";
+
+            const isRegistrationOpen = dayjs(event.registrationDeadline)
+                .fromNow()
+                .includes("in");
+
+            if (dayjs(event.registrationDeadline).fromNow().includes("in")) {
+                status = "Registration Open";
+                statusTextColor = "bg-blue-100";
+                statusBackgroundColor = "text-blue-800";
+            }
+
+            if (
+                dayjs(event.end).fromNow().includes("in") &&
+                dayjs(event.start).fromNow().includes("ago")
+            ) {
+                status = "Ongoing";
+                statusTextColor = "bg-green-100";
+                statusBackgroundColor = "text-green-800";
+            }
+
+            if (dayjs(event.end).fromNow().includes("ago")) {
+                status = "Ended";
+                statusTextColor = "bg-red-100";
+                statusBackgroundColor = "text-red-800";
+            }
+
+            return (
+                <li class="mb-10 ml-6 text-primary">
+                    <span class="absolute -left-6 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
+                        <Icon
+                            name={
+                                event?.icon === "string"
+                                    ? event.icon
+                                    : "mdi:event"
+                            }
+                            class="h-8"
+                        />
+                    </span>
+                    <h3
+                        id={event.title.replaceAll(" ", "-").toLowerCase()}
+                        class="mb-1 flex flex-col items-start font-semibold text-primary sm:flex-row"
+                    >
+                        {event.title}
+                        <span
+                            class={`ml-3 mr-2 rounded px-2.5 py-0.5 font-medium text-sm ${statusTextColor} ${statusBackgroundColor}`}
+                        >
+                            {status}
+                        </span>
+                    </h3>
+                    <time class="mt-4 block font-normal leading-none text-green-600 text-sm">
+                        Starting on
+                        {dayjs(event.start).format("DD[th] MMM YYYY hh:mm A")} (
+                        {dayjs(event.start).fromNow()})
+                    </time>
+                    <time class="block font-normal leading-none text-red-500 text-sm">
+                        Ends at
+                        {dayjs(event.end).format("DD[th] MMM YYYY hh:mm A")}
+                    </time>
+                    <p class=" font-semibold text-primary text-lg">
+                        Winning Prize: Rs {event.winningPrize}
+                        {event?.runnerUpPrize && (
+                            <>
+                                <br />
+                                <span class="text-sm">
+                                    Runner Up Prize: Rs {event.runnerUpPrize}
+                                </span>
+                            </>
+                        )}
+                        {event?.secondRunnerUpPrize && (
+                            <>
+                                <br />
+                                <span class="text-sm">
+                                    Second Runner Up Prize: Rs{" "}
+                                    {event.secondRunnerUpPrize}
+                                </span>
+                            </>
+                        )}
+                    </p>
+                    <p class="font-normal text-gray-500">{event.desc}</p>
+                    <div class="not-prose flex flex-row flex-nowrap items-center gap-4">
+                        <p class="font-normal text-secondary">
+                            Venue: {event.venue}
+                        </p>
+                    </div>
+
+                    <p class="not-prose text-md my-1 font-normal text-secondary">
+                        Registration Fee: Rs {event.registartionFee} (per team)
+                    </p>
+
+                    <p class="not-prose text-md my-1 font-semibold text-secondary">
+                        Registration Deadline:{" "}
+                        {dayjs(event.registrationDeadline).format(
+                            "DD[th] MMM YYYY hh:mm A"
+                        )}
+                    </p>
+
+                    <p class="not-prose text-md my-1 font-normal text-secondary">
+                        Contact Us: {event.contact?.join(", ")}
+                    </p>
+                    <div class="flex flex-col gap-2 sm:flex-row sm:gap-4">
+                        {event.actions.map((action) => {
+                            if (
+                                action.title === "Register" &&
+                                !isRegistrationOpen
+                            ) {
+                                return null;
+                            }
+
+                            return (
+                                <a
+                                    href={action.href}
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-green-800 px-4 py-2 font-medium text-default text-gray-100 no-underline text-sm hover:bg-green-700 hover:text-gray-100 sm:my-4 "
+                                >
+                                    <Icon name={action.icon} class="h-6" />
+                                    {action.title}
+                                </a>
+                            );
+                        })}
+                        <a
+                            href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${
+                                event.title
+                            }&details=${event.desc}&dates=${dayjs(
+                                event.start
+                            ).format("YYYYMMDDTHHmmss")}/${dayjs(
+                                event.end
+                            ).format("YYYYMMDDTHHmmss")}&location=${
+                                event.venue
+                            }`}
+                            target="_blank"
+                            class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-white px-4 py-2 font-medium text-default text-gray-900 no-underline text-sm hover:bg-gray-100 hover:text-gray-900 sm:my-4"
+                        >
+                            <Icon name="mdi:event" class="h-6" />
+                            Add to Calendar
+                        </a>
+                    </div>
+                </li>
+            );
+        })
+    }
+</ol>

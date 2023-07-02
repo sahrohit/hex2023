@@ -22,10 +22,20 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      typography: ({ theme }) => ({
+        default: {
+          css: {
+            "--tw-prose-headings": theme("colors.pink[900]"),
+          },
+        },
+      }),
     },
   },
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require("tailwindcss-fluid-type")],
+  plugins: [
+    require("tailwindcss-fluid-type"),
+    require("@tailwindcss/typography"),
+  ],
 };

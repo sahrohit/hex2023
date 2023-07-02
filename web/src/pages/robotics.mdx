@@ -1,0 +1,16 @@
+import ContentLayout from "../layouts/ContentLayout.astro";
+import Timeline from "~/components/timeline.astro";
+import Alert from "~/components/alert.astro";
+import logo from "~/assets/robo.png";
+
+<ContentLayout title="Himalaya Information Technology Club" logo={logo}>
+
+<Alert club="robotics" />
+
+Welcome to the Himalaya Robotics Club (HRC)! We are a passionate community dedicated to exploring the world of robotics and artificial intelligence. Join us to collaborate, learn, and push the boundaries of innovation. Our diverse activities include workshops, competitions, and hands-on projects. With experienced mentors by your side, unleash your creativity and contribute to the future of technology. Come be a part of HRC and shape the world of robotics!
+
+# Events
+
+<Timeline club="robotics" />
+
+</ContentLayout>

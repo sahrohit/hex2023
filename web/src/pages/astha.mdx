@@ -1,0 +1,16 @@
+import ContentLayout from "../layouts/ContentLayout.astro";
+import Timeline from "~/components/timeline.astro";
+import Alert from "~/components/alert.astro";
+import logo from "~/assets/astha.png";
+
+<ContentLayout title="AStHa" logo={logo}>
+
+<Alert club="astha" />
+
+AStHa is an architecture student club from Himalaya College Of Engineering. The club was established on 2068 and has been working for welfare of students. Every year AStHa organises different programs which benefits the students not only academically but also personally (recreational). We aim to guide students even on development of those skills which are not taught academically and create opportunities which is necessary for growth.
+
+# Events
+
+<Timeline club="astha" />
+
+</ContentLayout>
