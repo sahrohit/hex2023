@@ -4,8 +4,8 @@ import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.png", site);
-const description =
-    "Join us at Himalaya Exhibition (HEx) 2023, a premier technical event in Nepal. Experience captivating architecture model demonstrations, competitive coding challenges, engaging musical events, and more. Unleash your potential, gain practical knowledge, and contribute to the technical development of Nepal. Don't miss this transformative event at Himalaya College of Engineering, Chysal-9 Lalitpur";
+
+const {title = "HEx 2023: Technical Festival by Himalaya College of Engineering", description = "Join HEx, the annual technical festival at Himalaya College of Engineering (HCoE). Participate in our signature events like HEX Hackathon, HEX Genius IT Quiz, and Capture The Flag. Experience the blend of innovation and competition." } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -27,19 +27,19 @@ const description =
         </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon." type="image/x-icon" />
         <meta name="generator" content={generator} />
 
-        <title>HEx Himalaya</title>
+        <title>HEx 2023: Technical Festival by Himalaya College of Engineering</title>
         <meta name="description" content={description} />
 
         <!-- social media -->
-        <meta property="og:title" content="HEx Himalaya" />
+        <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="og:url" content={site} />
-        <meta property="twitter:title" content="HEx Himalaya" />
+        <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
         <meta name="twitter:card" content="summary_large_image" />
