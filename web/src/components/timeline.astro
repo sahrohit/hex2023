@@ -38,10 +38,9 @@ const response = await fetch(
 );
 const data = await response.json();
 
-if (data){
+if (data) {
     Object.keys(data).forEach((key) => events.push({ ...data[key] }));
 }
-
 ---
 
 <ol class="relative ml-4 border-l border-gray-200 dark:border-gray-700">
@@ -137,7 +136,8 @@ if (data){
                     </div>
 
                     <p class="not-prose text-md my-1 font-normal text-secondary">
-                        Registration Fee: Rs {event.registartionFee} (per team)
+                        Registration Fee: Rs {event.registartionFee} (per
+                        registartion)
                     </p>
 
                     <p class="not-prose text-md my-1 font-semibold text-secondary">
@@ -151,25 +151,26 @@ if (data){
                         Contact Us: {event.contact?.join(", ")}
                     </p>
                     <div class="flex flex-col gap-2 sm:flex-row sm:gap-4">
-                        {event.actions.map((action) => {
-                            if (
-                                action.title === "Register" &&
-                                !isRegistrationOpen
-                            ) {
-                                return null;
-                            }
+                        {event?.actions?.length &&
+                            event.actions.map((action) => {
+                                if (
+                                    action.title === "Register" &&
+                                    !isRegistrationOpen
+                                ) {
+                                    return null;
+                                }
 
-                            return (
-                                <a
-                                    href={action.href}
-                                    target="_blank"
-                                    class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-green-800 px-4 py-2 font-medium text-default text-gray-100 no-underline text-sm hover:bg-green-700 hover:text-gray-100 sm:my-4 "
-                                >
-                                    <Icon name={action.icon} class="h-6" />
-                                    {action.title}
-                                </a>
-                            );
-                        })}
+                                return (
+                                    <a
+                                        href={action.href}
+                                        target="_blank"
+                                        class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-green-800 px-4 py-2 font-medium text-default text-gray-100 no-underline text-sm hover:bg-green-700 hover:text-gray-100 sm:my-4 "
+                                    >
+                                        <Icon name={action.icon} class="h-6" />
+                                        {action.title}
+                                    </a>
+                                );
+                            })}
                         <a
                             href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${
                                 event.title
