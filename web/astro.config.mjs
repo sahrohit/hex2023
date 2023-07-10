@@ -6,6 +6,8 @@ import partytown from "@astrojs/partytown";
 import mdx from "@astrojs/mdx";
 import remarkToc from "remark-toc";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://hexhimalaya.com/",
@@ -21,7 +23,12 @@ export default defineConfig({
       shikiConfig: {
         theme: "dracula",
       },
-      remarkPlugins: [remarkToc, { headings: ["h1", "h2"] }],
+      remarkPlugins: [
+        remarkToc,
+        {
+          headings: ["h1", "h2"],
+        },
+      ],
       remarkRehype: {
         footnoteLabel: "Footnotes",
       },
@@ -33,4 +40,6 @@ export default defineConfig({
       // external: ["svgo"],
     },
   },
+  output: "hybrid",
+  adapter: vercel(),
 });
