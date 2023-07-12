@@ -20,7 +20,7 @@ What comes after 64.
 </details>
 
 <details>
-  <summary>Hint 1</summary>
+  <summary>Hint 2</summary>
 
 Two people were present at the base.
 
