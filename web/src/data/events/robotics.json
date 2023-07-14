@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Robo War",
+    "registrationDeadline": "2023-07-15 23:59",
+    "start": "2023-07-22 10:00",
+    "end": "2023-07-23 14:00",
+    "venue": "Himalaya College of Engineering, Chyasal, Lalitpur",
+    "registartionFee": "3000",
+    "winningPrize": "40,000",
+    "runnerUpPrize": "15,000",
+    "desc": "Robo War is an ultimate battle between autonomous robots. The teams will compete in a thrilling arena where their robots will engage in fierce combat, utilizing various strategies and weaponry. The competition will test the agility, control, and design of the robots.",
+    "icon": "mdi:event",
+    "actions": [
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSdRMRgBVvFHC-twZyOnh54EvfxpVjxI0xiLUjCOH5zLSHSdJg/viewform",
+        "title": "Register",
+        "icon": "ic:baseline-start"
+      }
+    ],
+    "contact": ["9866467925", "9867925210"]
+  },
+  {
+    "title": "Robo Soccer",
+    "registrationDeadline": "2023-07-15 23:59",
+    "start": "2023-07-22 10:00",
+    "end": "2023-07-23 14:00",
+    "venue": "Himalaya College of Engineering, Chyasal, Lalitpur",
+    "registartionFee": "2000",
+    "winningPrize": "25,000",
+    "runnerUpPrize": "8,000",
+    "desc": "Robo Soccer combines the excitement of soccer with the marvels of robotics. The teams will design and program autonomous robots capable of playing soccer, competing against each other in a challenging soccer field. This competition will evaluate the robots' agility, ball control, teamwork, and strategy.",
+    "icon": "mdi:event",
+    "actions": [
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSd0TDKJIiRAzDD6L_V-GXql7jNWAJDNJn8uDrVnuRvgTv9cHA/viewform",
+        "title": "Register",
+        "icon": "ic:baseline-start"
+      }
+    ],
+    "contact": ["9866467925", "9867925210"]
+  },
+  {
+    "title": "Robo Race",
+    "registrationDeadline": "2023-07-15 23:59",
+    "start": "2023-07-22 11:00",
+    "end": "2023-07-23 14:00",
+    "venue": "Himalaya College of Engineering, Chyasal, Lalitpur",
+    "registartionFee": "1500",
+    "winningPrize": "20,000",
+    "runnerUpPrize": "8,000",
+    "desc": "Robo Race is a fast-paced competition where teams will showcase their engineering prowess by creating autonomous racing robots. The robots will navigate through a track filled with obstacles, showcasing their speed, precision, and obstacle avoidance capabilities. It will be a thrilling display of cutting-edge technology and innovation.",
+    "icon": "mdi:event",
+    "actions": [
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSeqg9ZJ_hjJYe4GhxS7fsVTJLFbDIUPPi0j7SGake4h3s50Nw/viewform",
+        "title": "Register",
+        "icon": "ic:baseline-start"
+      }
+    ],
+    "contact": ["9866467925", "9867925210"]
+  }
+]
