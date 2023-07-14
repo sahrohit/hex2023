@@ -31,7 +31,7 @@ const events: Array<EventRegistration> = [
         href: "https://docs.google.com/forms/d/e/1FAIpQLSdmc2lUv958zp76Cv4XFsRN2TWlvTHUY9vp9xz-M5RET6ZnQw/viewform",
     },
     {
-        name: "Project Idea Submission",
+        name: "IT Project Idea Submission",
         description:
             "Gain your project recognition by everyone? Showcase it to the world! 🌎",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSfiHiUCBaINe9zTLZJXGwMOOYfiZI_f7ThK-FMDnnAbcFlCzQ/viewform",
@@ -55,13 +55,46 @@ const events: Array<EventRegistration> = [
     },
     {
         name: "FIFA Tournament",
-        description: "Fight for the title of the best FIFA player! ⚽",
+        description: "Fight for the title of the best FIFA player! 👕",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSd54O9n5RrwhnnjRKLxlvDGo3hKu-ABaxVsevCQeZfsBtuhsA/viewform",
     },
     {
         name: "Clash Royale Tournament",
         description: "Clash among your friends to become the best! 🏰",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSe4mCx9hEjkz-qANBtDfUlZzbujEKdGISM6yGp2f7Bw2Kh5_Q/viewform",
+    },
+    {
+        name: "Robo War",
+        description: "Embrace Metal Might, Conquer the Robo War! 🤖",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSdRMRgBVvFHC-twZyOnh54EvfxpVjxI0xiLUjCOH5zLSHSdJg/viewform",
+    },
+    {
+        name: "Robo Soccer",
+        description: "Kicking Goals with Robo Power and Precision! ⚽",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSd0TDKJIiRAzDD6L_V-GXql7jNWAJDNJn8uDrVnuRvgTv9cHA/viewform",
+    },
+    {
+        name: "Robo Race",
+        description: "Blazing Trails with Robo Speed and Innovation! 🏎️",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSeqg9ZJ_hjJYe4GhxS7fsVTJLFbDIUPPi0j7SGake4h3s50Nw/viewform",
+    },
+    {
+        name: "Civil Project Demonstration",
+        description:
+            "Building Tomorrow, Showcasing Progress, Uniting Communities Today! 🧱",
+        href: "https://docs.google.com/forms/d/11sxDFeLubtrzBXXmzKT-gZw8EN7uRKScK7MAqDhTiRY/viewform",
+    },
+    {
+        name: "Bridge Building Competition",
+        description:
+            "Building Bridges, Connecting Dreams, Engineering Excellence Prevails! 🌉",
+        href: "https://docs.google.com/forms/d/1lMT0JRnNw8sPWAJ7WGI4PSBD0TMv1d1tqW1JBgywws0/viewform",
+    },
+    {
+        name: "Shake Table Competition",
+        description:
+            "Quake and Shake, Innovate, Structures That Never Break! 🏗️",
+        href: "https://docs.google.com/forms/d/12BeHQD2IpEycy23j3GsXe0VdbRHpEpzVezDULK96wk4/viewform",
     },
 ];
 ---
@@ -76,11 +109,10 @@ const events: Array<EventRegistration> = [
         <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
             <HeroImage />
         </div>
-
         <div
             class="max-h-100vh relative mx-8 mb-32 mt-16 grid h-full place-items-center pb-16"
         >
-            <div class="max-h-[76vh] overflow-y-scroll">
+            <div class="max-h-[76vh] overflow-y-scroll sm:w-[70%]">
                 <ul
                     role="list"
                     class="grid grid-cols-[repeat(auto-fit,minmax(24ch,1fr))] gap-4"

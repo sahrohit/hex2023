@@ -5,9 +5,7 @@ import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.png", site);
-const description =
-    "Join us at Himalaya Exhibition (HEx) 2023, a premier technical event in Nepal. Experience captivating architecture model demonstrations, competitive coding challenges, engaging musical events, and more. Unleash your potential, gain practical knowledge, and contribute to the technical development of Nepal. Don't miss this transformative event at Himalaya College of Engineering, Chysal-9 Lalitpur";
-const { title, logo } = Astro.props;
+const { title="HEx", logo, description="Join us at Himalaya Exhibition (HEx) 2023, a premier technical event in Nepal. Experience captivating architecture model demonstrations, competitive coding challenges, engaging musical events, and more. Unleash your potential, gain practical knowledge, and contribute to the technical development of Nepal. Don't miss this transformative event at Himalaya College of Engineering, Chysal-9 Lalitpur" } = Astro.props;
 const widths = [128];
 ---
 
@@ -33,7 +31,7 @@ const widths = [128];
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="generator" content={generator} />
 
-        <title>HEx Himalaya</title>
+        <title>{title}: HEx Himalaya</title>
         <meta name="description" content={description} />
 
         <!-- social media -->
