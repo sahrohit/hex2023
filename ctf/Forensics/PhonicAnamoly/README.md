@@ -6,14 +6,14 @@ Your team has sent you an email with an audio file that they are unable to under
 
 Note: Write the flag as CTF{\<answer>} with spaces replaced by '\_'
 
-| Summary              |           |
-| -------------------- | --------- |
-| **Category**         | Forensics |
-| **Points**           | 2000      |
-| **Links**            |           |
-| **Files**            | [ph31ns.wav](https://ctf.hexhimalaya.com/files/ed77d05b25f28244670095bd2ec83202/ph31ns.wav)          |
-| **Difficulty (1-5)** | 3         |
-| **Tags**             |           |
+| Summary              |                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------- |
+| **Category**         | Forensics                                                                                   |
+| **Points**           | 2000                                                                                        |
+| **Links**            |                                                                                             |
+| **Files**            | [ph31ns.wav](https://ctf.hexhimalaya.com/files/ed77d05b25f28244670095bd2ec83202/ph31ns.wav) |
+| **Difficulty (1-5)** | 3                                                                                           |
+| **Tags**             |                                                                                             |
 
 <details>
   <summary>Hint 1</summary>
@@ -42,7 +42,6 @@ Frequency is not you friend, try asking spectrum maybe.
 
 </details>
 
-
 <details>
 <summary>Solution</summary>
   
@@ -53,6 +52,7 @@ spectrogram. You will find the flag but a bit jumbled, Clearly analyze it to get
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{Ph3i_f4mily_is_in_d4ng3r}
 ```

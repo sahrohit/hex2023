@@ -27,6 +27,7 @@ Change the emoji 🙂 zero and ☹ to 1 and change it from binary to string usin
 [CodeBeautify](https://codebeautify.org/string-binary-converter)
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{Z3r0s_4nd_0n3s_4r3_bett3r}
 ```

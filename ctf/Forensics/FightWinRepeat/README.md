@@ -48,6 +48,7 @@ On decryption, we can find the flag.
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{70u_f0und_m3}
 ```

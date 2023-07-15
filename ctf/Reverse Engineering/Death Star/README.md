@@ -58,6 +58,7 @@ print("Skywalkered message: " + stormtrooper)
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{THEFORCEISSTRONGWITHYOU}
 ```

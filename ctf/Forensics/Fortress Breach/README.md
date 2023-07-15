@@ -52,6 +52,7 @@ Second link: https://drive.google.com/drive/folders/1RQuIXsnEGInopKRAQ4tUP-3Sho3
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{FlAG_47re55_8reaCHED}
 ```

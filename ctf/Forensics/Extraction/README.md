@@ -34,6 +34,7 @@ Open the image file in online Exif viewer and you'll find the two passwords and 
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{R3public_0f_4LPH4_C3PHI34}
 ```

@@ -2,15 +2,14 @@
 
 Robot16, your secret agent operating within the enemy base, possesses vital information that could significantly influence the outcome of the war in your favor. Unfortunately, Robot16 is currently experiencing internal problems that prevent it from translating the information. However, Robot16 managed to bring back a file. Your urgent task is to decipher the contents of this file and extract the crucial information before time runs out.
 
-| Summary              |           |
-| -------------------- | --------- |
-| **Category**         | Forensics |
-| **Points**           | 2500      |
-| **Links**            |           |
-| **Files**            | [robots.zip](https://ctf.hexhimalaya.com/files/be11a016077efd813cc3d176e684f2c3/robot.zip)          |
-| **Difficulty (1-5)** | 4         |
-| **Tags**             |           |
-
+| Summary              |                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------ |
+| **Category**         | Forensics                                                                                  |
+| **Points**           | 2500                                                                                       |
+| **Links**            |                                                                                            |
+| **Files**            | [robots.zip](https://ctf.hexhimalaya.com/files/be11a016077efd813cc3d176e684f2c3/robot.zip) |
+| **Difficulty (1-5)** | 4                                                                                          |
+| **Tags**             |                                                                                            |
 
 <details>
   <summary>Hint 1</summary>
@@ -48,6 +47,7 @@ convert this into normal text you will get the flag.
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{r0b0t16_1d3nti7y_r3v3al3d}
 ```

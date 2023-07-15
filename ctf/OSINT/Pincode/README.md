@@ -45,6 +45,7 @@ Search at the bottom of the website to get the pin code.
 https://www.winkworth.co.uk/estate-agents/kensal-queens-park/meet-the-team
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{NW10_3NR}
 ```

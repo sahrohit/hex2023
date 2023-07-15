@@ -60,6 +60,7 @@ And Bingo! We can see the owners of the flight as “JOHN P. ODOM” and “REGA
 Combining the names we get the flag
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{JOHN_REGAN}
 ```

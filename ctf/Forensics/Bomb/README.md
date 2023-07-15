@@ -28,12 +28,13 @@ from zipfile import ZipFile
 
 zipObj = ZipFile('Zipped2048.zip', 'w')
 for i in range(0,2047):
-  zipObj = ZipFile('Zipped'+str(2048-i)+'.zip', 'w')
-  zipObj.extractall()
-  zipObj.close()
+zipObj = ZipFile('Zipped'+str(2048-i)+'.zip', 'w')
+zipObj.extractall()
+zipObj.close()
 
 zipObj.close()
-```
+
+````
 
 ### Code to Generate the Zip Files:
 
@@ -46,10 +47,11 @@ for i in range(1,2049):
     zipObj = ZipFile('Zipped'+str(i)+'.zip', 'w')
     zipObj.write('Zipped'+str(i-1)+'.zip')
     zipObj.close()
-```
+````
 
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 hexCTF{It_W@S_S0_E@SY}
 ```

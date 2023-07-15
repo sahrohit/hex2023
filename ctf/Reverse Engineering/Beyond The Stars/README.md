@@ -45,6 +45,7 @@ int main()
 ```
 <details>
 <summary>Disclose answer ?</summary>
+
 ```copy
 CTF{>2<60C655:E02A:07C66}
 ```
