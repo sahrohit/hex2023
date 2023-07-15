@@ -1,15 +1,15 @@
-# Bomb
+# Fire with Fire
 
 Fight, Check, Repeat
 
-| Summary              |                                    |
-| -------------------- | ---------------------------------- |
-| **Category**         | Forensics                          |
-| **Points**           | 1500                               |
-| **Links**            | [Zipped2048.zip](./Zipped2048.zip) |
-| **Files**            |                                    |
-| **Difficulty (1-5)** | 2                                  |
-| **Tags**             |                                    |
+| Summary              |           |
+| -------------------- | --------- |
+| **Category**         | Forensics |
+| **Points**           | 1500      |
+| **Links**            |           |
+| **Files**            |           |
+| **Difficulty (1-5)** | 2         |
+| **Tags**             |           |
 
 <details>
   <summary>Hint 1</summary>

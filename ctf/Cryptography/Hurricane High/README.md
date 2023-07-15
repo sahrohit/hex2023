@@ -4,7 +4,7 @@ The enemy has launched an artificial hurricane in the path of your allies, with 
 
 ![Hurricane High](hurricanehigh.png)
 
-Note: Enter the flag as CTF{\<answer>} with spaces replaced by '_'
+Note: Enter the flag as CTF{\<answer>} with spaces replaced by '\_'
 
 | Summary              |              |
 | -------------------- | ------------ |
@@ -18,7 +18,7 @@ Note: Enter the flag as CTF{\<answer>} with spaces replaced by '_'
 <details>
   <summary>Hint 1</summary>
 
-The war was held in Beaufort.
+Its nested.
 
 </details>
 
@@ -41,6 +41,7 @@ Decode is using the Beaufort Cipher with "HEX" as the key, and the answer is dis
 ```
 CTF{eye_of_the_storm}
 ```
+
 </details>
 
 </details>

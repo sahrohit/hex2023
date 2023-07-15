@@ -1,1 +1,1 @@
-hexCTF{It_W@S_S0_E@SY}
+CTF{It_W@S_S0_E@SY}
