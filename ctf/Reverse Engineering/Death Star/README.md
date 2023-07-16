@@ -2,14 +2,14 @@
 
 In order to infiltrate the heavily secured Pinnacle Tower, our team has devised a plan to create a diversion by disabling the main server. To achieve this, we need to obtain the correct password by analyzing and executing the code provided in the file named "PINNACLE" This mission bears a resemblance to an intriguing movie plot reminiscent of "Star Wars."
 
-| Summary              |                                                                                                                                                                                          |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Category**         | Reverse Engineering                                                                                                                                                                      |
-| **Points**           | 2000                                                                                                                                                                                     |
-| **Links**            |                                                                                                                                                                                          |
-| **Files**            | [PINNACLE.py](https://ctf.hexhimalaya.com/files/6243d8cd3e2d47afe9b05e3137833e4a/PINNACLE.py?token=.eJyrViotTi2Kz0xRsjLWUSpJTcyFsdMyc1LBbEPjWgD0CAwf.ZK7fpQ.fR-c7xoPWCE_8uBmJ8slPGcswP4) |
-| **Difficulty (1-5)** | 3                                                                                                                                                                                        |
-| **Tags**             |                                                                                                                                                                                          |
+| Summary              |                              |
+| -------------------- | ---------------------------- |
+| **Category**         | Reverse Engineering          |
+| **Points**           | 2000                         |
+| **Links**            |                              |
+| **Files**            | [PINNACLE.py](./PINNACLE.py) |
+| **Difficulty (1-5)** | 3                            |
+| **Tags**             |                              |
 
 <details>
   <summary>Hint 1</summary>
