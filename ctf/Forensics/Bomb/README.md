@@ -53,7 +53,7 @@ for i in range(1,2049):
 <summary>Disclose answer ?</summary>
 
 ```copy
-hexCTF{It_W@S_S0_E@SY}
+CTF{It_W@S_S0_E@SY}
 ```
 
 </details>
