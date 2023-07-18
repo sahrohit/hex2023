@@ -1,12 +1,12 @@
-import Head from 'next/head'
+import Head from "next/head"
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
-import { Schedule } from '@/components/Schedule'
-import { Speakers } from '@/components/Speakers'
-import { Sponsors } from '@/components/Sponsors'
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+import { Hero } from "@/components/Hero"
+import FAQ from "@/components/FAQ"
+import { Schedule } from "@/components/Schedule"
+import { Sponsors } from "@/components/Sponsors"
+import { Countdown } from "@/components/Countdown"
 
 export default function Home() {
   return (
@@ -20,11 +20,11 @@ export default function Home() {
       </Head>
       <Header />
       <main>
+        <Countdown />
         <Hero />
-        {/* <Speakers /> */}
         <Schedule />
         <Sponsors />
-        {/* <Newsletter /> */}
+        <FAQ />
       </main>
       <Footer />
     </>

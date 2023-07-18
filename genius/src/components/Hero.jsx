@@ -1,9 +1,9 @@
-import Image from 'next/future/image'
+import Image from "next/future/image"
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
-import { MobileActions } from './Actions'
+import { Button } from "@/components/Button"
+import { Container } from "@/components/Container"
+import backgroundImage from "@/images/background.jpg"
+import { MobileActions } from "./Actions"
 
 export function Hero() {
   return (
@@ -45,10 +45,10 @@ export function Hero() {
           <MobileActions />
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Teams', '13'],
-              ['People Attending', '100+'],
-              ['Venue', 'Himalaya College of Engineering'],
-              ['Location', 'Chyasal, Lalitpur'],
+              ["Teams", "13"],
+              ["People Attending", "100+"],
+              ["Venue", "Himalaya College of Engineering"],
+              ["Location", "Chyasal, Lalitpur"],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>
