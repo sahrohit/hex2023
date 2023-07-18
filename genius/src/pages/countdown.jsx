@@ -52,7 +52,7 @@ const CountdownPage = () => {
   }, [days, hours, minutes, seconds])
 
   return (
-    <div className="relative z-10 -mx-4 h-screen overflow-hidden bg-indigo-50 px-4 py-12 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-16">
+    <div className="relative z-10 -mx-4 h-screen overflow-hidden bg-indigo-50 px-4 py-12 sm:-mx-6 sm:px-6 md:mx-0 md:px-16 xl:px-24 xl:py-16">
       <Image
         className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
         src={backgroundImage}
@@ -67,7 +67,7 @@ const CountdownPage = () => {
             {text}
           </h2>
           {state !== "ENDED" && (
-            <div className="grid grid-flow-col gap-16 text-center font-display font-medium tracking-tighter text-blue-900">
+            <div className="grid grid-flow-col gap-16 text-center font-display font-semibold tracking-tighter text-blue-900">
               <div className="flex flex-col">
                 <span className="countdown font-mono text-5xl sm:text-9xl">
                   <span style={{ "--value": days }}></span>
