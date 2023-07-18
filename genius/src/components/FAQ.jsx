@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "How will HExGenius be judged?",
     answer:
-      "HExGenius has a diverse set of judges eager to know about your solutions. They will judge you on the basis of multiple factors like innovation, technical difficulty and user experience. Additionally, your teamwork and presentation skills might also be taken into consideration. Further details are available at https://genius.hexhimalaya.np/judging-criteria",
+      "HExGenius has a diverse set of judges eager to know about your solutions. They will judge you on the basis of multiple factors like innovation, technical difficulty and user experience. Additionally, your teamwork and presentation skills might also be taken into consideration. Further details are available at https://genius.hexhimalaya.com/judging-criteria",
   },
   {
     question: "Can I work on a Project I've already done before HExGenius?",
