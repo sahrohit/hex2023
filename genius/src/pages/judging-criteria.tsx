@@ -40,12 +40,19 @@ const CodeOfConduct = () => {
           <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
             <div className="mt-6 space-y-6 pl-8 font-display text-2xl tracking-tight text-blue-900">
               <Heading order={1}>JUDGING CRITERIA</Heading>
-              <p>
-                • Scores for each criteria will be assigned on a scale of 1 to
-                5. • Judges will have the discretion to assign partial points. •
-                Scores will be tallied and the winners will be determined based
-                on the total score.
-              </p>
+              <ol>
+                <li>
+                  Scores for each criteria will be assigned on a scale of 1 to
+                  5.
+                </li>
+                <li>
+                  Judges will have the discretion to assign partial points.
+                </li>
+                <li>
+                  Scores will be tallied and the winners will be determined
+                  based on the total score.
+                </li>
+              </ol>
               <Heading order={1}>Pitch (Total Score: 15 Points)</Heading>
               <Heading order={2}>A. Balanced (1-5 Points)</Heading>
               <ol>
