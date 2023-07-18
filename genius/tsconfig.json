@@ -19,6 +19,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Button.jsx", "src/components/Actions.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Button.jsx", "src/components/Actions.jsx", "src/pages/countdown.jsx"],
   "exclude": ["node_modules"]
 }

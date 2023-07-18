@@ -11,7 +11,7 @@ const STATES = ["SCHEDULED", "ONGOING", "ENDED"]
 const EVENT_START = "2023-07-19 17:00:00"
 const EVENT_END = "2023-07-21 05:00:00"
 
-export function Countdown() {
+export function Countdown(props) {
   const [state, setState] = useState()
   const [timeTill, setTimeTill] = useState("HEx Genius")
 
