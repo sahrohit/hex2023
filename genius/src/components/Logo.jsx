@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Logo(props) {
   return (
-    <Link href="/">
+    <Link href="/" aria-label="Home">
       <svg
         width="106"
         height="100"
