@@ -40,13 +40,19 @@ Euclid is obsessed with prime indices.
   
 ### Follow the process below.
 
-First decrpt the given text using Periodic Table Cipher.
+Mentioned aphrodite numbers are nothing but Prime numbers defined by wilson's theorem,
+Hermes numbers are prime numbers which are sum of square of other prime numbers,so
+basically there are Hermens numbers lesser than 729 which are 13,29,53,173,293.
+13=2**2+3**2
+29=2**2+5**2
+53=2**2+7**2
 
-https://www.dcode.fr/atomic-number-substitution
-
-Then index the decrypted text from 1 to the length of the text.
-
-Remove all the prime indices and you will get the flag. You'll get two of them, and remove that doesn't make sense.
+(Observe that Hermens numbers can only be formed with help of 2)
+So Euclid uses Hermens numbers for encrypting (shift cipher==ROT cipher) .I choose 29,
+player has to go through these numbers for decrypting like ROT13,ROT29,ROT53 .then also he
+has to choose alphabets appearing at prime index as Euclid is obsessed with prime numbers ,
+Euclid likes natural number indexing starts from 1.Player chooses alphabets which are at index
+2,3,5,7,11… manually and gets the flag after decrypting the message with ROT29==ROT3
 
 <details>
 <summary>Disclose answer ?</summary>

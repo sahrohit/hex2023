@@ -45,8 +45,8 @@ export function Hero() {
           <MobileActions />
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ["Teams", "13"],
-              ["People Attending", "100+"],
+              ["Teams", "14"],
+              ["People Attended", "100+"],
               ["Venue", "Himalaya College of Engineering"],
               ["Location", "Chyasal, Lalitpur"],
             ].map(([name, value]) => (
