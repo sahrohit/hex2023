@@ -42,8 +42,8 @@ const CodeOfConduct = () => {
               <Heading order={1}>JUDGING CRITERIA</Heading>
               <ol>
                 <li>
-                  Scores for each criteria will be assigned on a scale of 1 to
-                  5.
+                  Scores for each criteria will be assigned on a scale
+                  accordingly.
                 </li>
                 <li>
                   Judges will have the discretion to assign partial points.
@@ -138,8 +138,12 @@ const CodeOfConduct = () => {
                   judges.
                 </li>
               </ol>
-              <Heading order={1}>Code Quality (Total Score: 15 Points)</Heading>
-              <Heading order={2}>A. Functionality (1-5 Points)</Heading>
+              <Heading order={1}>Code Quality (Total Score: 35 Points)</Heading>
+              <p className="font-bold">
+                20 points added as per judges request.{" "}
+                <span className="text-sm">Updated</span>
+              </p>
+              <Heading order={2}>A. Functionality (1-15 Points)</Heading>
               <ol>
                 <li>
                   The code does not function as intended or has major flaws that
@@ -163,7 +167,7 @@ const CodeOfConduct = () => {
                   high degree of complexity or sophistication.
                 </li>
               </ol>
-              <Heading order={2}>B. Readability (1-5 Points)</Heading>
+              <Heading order={2}>B. Readability (1-10 Points)</Heading>
               <ol>
                 <li>
                   The code is unreadable and difficult to understand, with poor
@@ -191,7 +195,7 @@ const CodeOfConduct = () => {
                   detailed comments or documentation, and impeccable formatting.
                 </li>
               </ol>
-              <Heading order={2}>C. Modularity (1-5 Points)</Heading>
+              <Heading order={2}>C. Modularity (1-10 Points)</Heading>
               <ol>
                 <li>
                   The code is not modular and is difficult to maintain, with a
@@ -356,9 +360,14 @@ const CodeOfConduct = () => {
                 </li>
               </ol>
               <Heading order={1}>
-                Team Collaboration (Total Score: 10 Points)
+                Mentor&apos;s Evaluation & Team Collaboration (Total Score: 20
+                Points)
               </Heading>
-              <Heading order={2}>A. Communication (1-5 Points)</Heading>
+              <p className="font-bold">
+                10 points added as per judges request.{" "}
+                <span className="text-sm">Updated</span>
+              </p>
+              <Heading order={2}>A. Communication (1-10 Points)</Heading>
               <ol>
                 <li>
                   The team had poor communication and had difficulty working
@@ -380,7 +389,7 @@ const CodeOfConduct = () => {
                   together seamlessly.
                 </li>
               </ol>
-              <Heading order={2}>B. Coordination (1-5 Points)</Heading>
+              <Heading order={2}>B. Coordination (1-10 Points)</Heading>
               <ol>
                 <li>
                   The team had poor coordination and had difficulty working on
