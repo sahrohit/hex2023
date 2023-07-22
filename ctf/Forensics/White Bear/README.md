@@ -41,7 +41,9 @@ for i in range(1,249):
 
 Now we get a .wav file in the final unzip. On inspecting the .wav file with any sound steganography tool like DeepSound we find two .ppt files. The catch here is that only one of the files has the original flag hidden in it and the other file is just a diversion. A .ppt can be easily converted to a .zip file and the contents hidden in it can be viewed accordingly. https://support.microsoft.com/en-us/office/extract-files-or-objects-from-a-powerpoint-file-85511e6f-9e76-41ad-8424-eab8a5bbc517
 
-First, change the extension from .ppt to .zip then view the zipped folder. You will find a hidden file in ppt>slidemasters>.hidden. The wrong file just has a rot 13 encryption with the message “YOU ARE AT THE WRONG PLACE”. On opening the correct file you can find a blowfish encryption and a text message pointing to the password of the blowfish encryption ie.HEX.
+First, change the extension from .ppt to .zip then view the zipped folder. You will find a hidden file in ppt>slidemasters>.hidden. The wrong file just has a rot 13 encryption with the message “YOU ARE AT THE WRONG PLACE”.
+
+On opening the correct file you can find a blowfish encryption and a text message pointing to the password of the blowfish encryption ie.UAVIS (as written and highlighted in the same file).
 http://blowfish.online-domain-tools.com/
 
 On decryption, we can find the flag.
