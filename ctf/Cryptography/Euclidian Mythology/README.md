@@ -43,9 +43,9 @@ Euclid is obsessed with prime indices.
 Mentioned aphrodite numbers are nothing but Prime numbers defined by wilson's theorem,
 Hermes numbers are prime numbers which are sum of square of other prime numbers,so
 basically there are Hermens numbers lesser than 729 which are 13,29,53,173,293.
-13=2**2+3**2
-29=2**2+5**2
-53=2**2+7**2
+<br/>13=2**2+3**2
+<br/>29=2**2+5**2
+<br/>53=2**2+7**2
 
 (Observe that Hermens numbers can only be formed with help of 2)
 So Euclid uses Hermens numbers for encrypting (shift cipher==ROT cipher) .I choose 29,
