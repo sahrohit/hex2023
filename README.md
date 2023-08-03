@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/sahrohit/hex2023">
     <img src="web\src\icons\logomark.svg" alt="Logo" width="160">
   </a>
 
