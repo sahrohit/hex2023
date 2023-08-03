@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="ctf\backup\Hex CTF.2023-07-23_15_45_30\uploads\38c1101658ffc8bc401d2d8fa151e9e0\logo.jpg" alt="Logo" width="160">
+    <img src="web\src\icons\logomark.svg" alt="Logo" width="160">
   </a>
 
   <h3 align="center">HEx Himalaya</h3>
